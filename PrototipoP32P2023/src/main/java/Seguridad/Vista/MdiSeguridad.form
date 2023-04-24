@@ -69,7 +69,7 @@
                 <MenuItem class="javax.swing.JCheckBoxMenuItem" name="mantenimientoAplicaciones">
                   <Properties>
                     <Property name="selected" type="boolean" value="true"/>
-                    <Property name="text" type="java.lang.String" value="Mantenimiento Ventas"/>
+                    <Property name="text" type="java.lang.String" value="Mantenimiento Vendedores"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mantenimientoAplicacionesActionPerformed"/>

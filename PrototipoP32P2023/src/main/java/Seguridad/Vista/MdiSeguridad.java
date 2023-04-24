@@ -104,7 +104,7 @@ public class MdiSeguridad extends javax.swing.JFrame {
         });
 
         mantenimientoAplicaciones.setSelected(true);
-        mantenimientoAplicaciones.setText("Mantenimiento Ventas");
+        mantenimientoAplicaciones.setText("Mantenimiento Vendedores");
         mantenimientoAplicaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mantenimientoAplicacionesActionPerformed(evt);

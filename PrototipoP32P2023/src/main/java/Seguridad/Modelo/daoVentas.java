@@ -88,8 +88,8 @@ public class daoVentas {
             System.out.println("ejecutando query: " + SQL_UPDATE);
             stmt = conn.prepareStatement(SQL_UPDATE);
             stmt.setString(1, aplicacion.getNombreAplicacion());
-            stmt.setString(2, aplicacion.getEstatusAplicacion());
-            stmt.setInt(3, aplicacion.getVentas());
+            stmt.setInt(2, aplicacion.getVentas());
+            stmt.setString(3, aplicacion.getEstatusAplicacion());
             stmt.setInt(4, aplicacion.getIdAplicacion());
 
             rows = stmt.executeUpdate();

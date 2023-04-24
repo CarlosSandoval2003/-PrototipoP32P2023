@@ -18,7 +18,7 @@
     <Property name="iconifiable" type="boolean" value="true"/>
     <Property name="maximizable" type="boolean" value="true"/>
     <Property name="resizable" type="boolean" value="true"/>
-    <Property name="title" type="java.lang.String" value="Mantenimiento Aplicaciones"/>
+    <Property name="title" type="java.lang.String" value="Mantenimiento Vendedores"/>
     <Property name="visible" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
@@ -97,7 +97,7 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="label1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="294" pref="562" max="32767" attributes="0"/>
+                      <EmptySpace min="294" pref="568" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="jScrollPane1" pref="630" max="32767" attributes="0"/>
@@ -191,7 +191,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Century Gothic" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Aplicaciones"/>
+        <Property name="text" type="java.lang.String" value="Vendedores"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnModificar">

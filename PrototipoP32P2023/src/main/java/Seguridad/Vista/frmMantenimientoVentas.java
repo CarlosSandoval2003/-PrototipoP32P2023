@@ -96,7 +96,7 @@ public class frmMantenimientoVentas extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Mantenimiento Aplicaciones");
+        setTitle("Mantenimiento Vendedores");
         setVisible(true);
 
         btnEliminar.setText("Eliminar");
@@ -121,7 +121,7 @@ public class frmMantenimientoVentas extends javax.swing.JInternalFrame {
         });
 
         label1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        label1.setText("Aplicaciones");
+        label1.setText("Vendedores");
 
         btnModificar.setText("Modificar");
         btnModificar.addActionListener(new java.awt.event.ActionListener() {
@@ -246,7 +246,7 @@ public class frmMantenimientoVentas extends javax.swing.JInternalFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(label1)
-                        .addGap(294, 562, Short.MAX_VALUE))
+                        .addGap(294, 568, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 630, Short.MAX_VALUE)
                         .addContainerGap())))

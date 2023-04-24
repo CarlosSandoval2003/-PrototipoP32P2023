@@ -41,7 +41,8 @@ public class frmMantenimientoBitacora extends javax.swing.JInternalFrame {
         List<clsBitacora> aplicaciones = aplicacionDAO.select();
         tablaAplicaciones.setModel(modelo);
         String[] dato = new String[7];
-        for (int i = 0; i < aplicaciones.size(); i++) {
+
+                for (int i = 0; i < aplicaciones.size(); i++) {
             dato[0] = Integer.toString(aplicaciones.get(i).getIdBitacora());
             dato[1] = aplicaciones.get(i).getFechaBitacora();
             dato[2] = aplicaciones.get(i). getAccionBitacora();

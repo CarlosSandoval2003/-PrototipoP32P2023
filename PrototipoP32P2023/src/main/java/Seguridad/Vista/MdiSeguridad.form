@@ -36,7 +36,7 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="mnuArchivo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Archivo"/>
+            <Property name="text" type="java.lang.String" value="Abrir"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuArchivoActionPerformed"/>
@@ -66,14 +66,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuCatalogosMantenimientosActionPerformed"/>
               </Events>
               <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="mantenimientoUsuarios">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Mantenimiento Usuarios"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mantenimientoUsuariosActionPerformed"/>
-                  </Events>
-                </MenuItem>
                 <MenuItem class="javax.swing.JCheckBoxMenuItem" name="mantenimientoAplicaciones">
                   <Properties>
                     <Property name="selected" type="boolean" value="true"/>
@@ -81,15 +73,6 @@
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mantenimientoAplicacionesActionPerformed"/>
-                  </Events>
-                </MenuItem>
-                <MenuItem class="javax.swing.JCheckBoxMenuItem" name="mantenimientoTipoUsuarios">
-                  <Properties>
-                    <Property name="selected" type="boolean" value="true"/>
-                    <Property name="text" type="java.lang.String" value="Mantenimiento Tipo de Usuarios"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mantenimientoTipoUsuariosActionPerformed"/>
                   </Events>
                 </MenuItem>
               </SubComponents>
@@ -103,7 +86,7 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="mnuConsultas">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Consultas"/>
+            <Property name="text" type="java.lang.String" value="Informes"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuConsultasActionPerformed"/>
@@ -122,7 +105,7 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="mnuReportes">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Reportes"/>
+            <Property name="text" type="java.lang.String" value="Herramientas"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="mnuAyudas">

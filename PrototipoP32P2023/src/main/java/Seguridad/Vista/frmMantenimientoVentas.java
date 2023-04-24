@@ -32,8 +32,9 @@ public class frmMantenimientoVentas extends javax.swing.JInternalFrame {
     public void llenadoDeTablas() {
         DefaultTableModel modelo = new DefaultTableModel();
         modelo.addColumn("ID");
-        modelo.addColumn("nombre");
-        modelo.addColumn("Estatus");
+        modelo.addColumn("Nombre");
+        modelo.addColumn("Ventas");
+        modelo.addColumn("Area");
         clsVentas aplicacion = new clsVentas();
         //VendedorDAO vendedorDAO = new VendedorDAO();
         List<clsVentas> listaAplicaciones = aplicacion.getListadoAplicaciones();

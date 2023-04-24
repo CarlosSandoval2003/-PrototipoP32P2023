@@ -34,6 +34,14 @@ CREATE TABLE IF NOT EXISTS tbl_vendedores (
 	PRIMARY KEY (venid)
 ) ENGINE=InnoDB CHARACTER SET = latin1;    
 
+CREATE TABLE IF NOT EXISTS tbl_aplicacion (
+	aplid int NOT NULL AUTO_INCREMENT,
+	aplnombre VARCHAR(50),
+	aplestatus VARCHAR(50),
+	PRIMARY KEY (aplid)
+) ENGINE=InnoDB CHARACTER SET = latin1;    
+
+
 
 CREATE TABLE IF NOT EXISTS tbl_bitacora (
     bitid int auto_increment PRIMARY KEY,

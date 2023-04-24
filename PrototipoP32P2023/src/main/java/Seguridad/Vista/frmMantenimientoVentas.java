@@ -367,6 +367,7 @@ public class frmMantenimientoVentas extends javax.swing.JInternalFrame {
     {
         txtNombre.setText("");
         txtContrasena.setText("");
+        txtVentas.setText("");
         txtbuscado.setText("");
     }
     public void habilitarBotones()

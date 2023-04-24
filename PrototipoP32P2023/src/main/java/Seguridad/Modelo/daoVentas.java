@@ -21,7 +21,7 @@ public class daoVentas {
     private static final String SQL_UPDATE = "UPDATE tbl_vendedores SET vennombre=?, vennumeroventas=?, venareaventas=? WHERE venid = ?";
     private static final String SQL_DELETE = "DELETE FROM tbl_vendedores WHERE venid=?";
     private static final String SQL_SELECT_NOMBRE = "SELECT venid, vennombre, vennumeroventas, venareaventas FROM tbl_vendedores WHERE vennombre = ?";
-    private static final String SQL_SELECT_ID = "SELECT venid, vennombre, vennumeroventas, venareaventas FROM tbl_aplicacion WHERE venid = ?";    
+    private static final String SQL_SELECT_ID = "SELECT venid, vennombre, vennumeroventas, venareaventas FROM tbl_vendedores WHERE venid = ?";    
 
     public List<clsVentas> consultaAplicacion() {
         Connection conn = null;

@@ -48,6 +48,7 @@ CREATE TABLE IF NOT EXISTS tbl_bitacora (
     bitfecha datetime NULL, 
 	bitaccion VARCHAR(10) NOT NULL,
     bitip VARCHAR(25) NOT NULL,
+    bitnombrepc varchar(50) not null;
     usuid INT NOT NULL,
     aplid INT NOT NULL,
 	FOREIGN KEY (aplid) references tbl_aplicacion (aplid),

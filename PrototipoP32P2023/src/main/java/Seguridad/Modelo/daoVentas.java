@@ -17,7 +17,7 @@ import java.util.List;
 public class daoVentas {
 
     private static final String SQL_SELECT = "SELECT aplid, aplnombre, aplestatus FROM tbl_aplicacion";
-    private static final String SQL_INSERT = "INSERT INTO tbl_aplicacion(aplnombre, aplestatus) VALUES(?, ?)";
+    private static final String SQL_INSERT = "INSERT INTO tbl_aplicaciones(aplnombre, aplestatus) VALUES(?, ?)";
     private static final String SQL_UPDATE = "UPDATE tbl_aplicacion SET aplnombre=?, aplestatus=? WHERE aplid = ?";
     private static final String SQL_DELETE = "DELETE FROM tbl_aplicacion WHERE aplid=?";
     private static final String SQL_SELECT_NOMBRE = "SELECT aplid, aplnombre, aplestatus FROM tbl_aplicacion WHERE aplnombre = ?";

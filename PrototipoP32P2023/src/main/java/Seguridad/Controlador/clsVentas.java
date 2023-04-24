@@ -14,6 +14,7 @@ public class clsVentas {
     private int IdAplicacion;
     private String NombreAplicacion;
     private String EstatusAplicacion;
+    private int Ventas;
 
     public int getIdAplicacion() {
         return IdAplicacion;
@@ -38,10 +39,19 @@ public class clsVentas {
     public void setEstatusAplicacion(String EstatusAplicacion) {
         this.EstatusAplicacion = EstatusAplicacion;
     }
+    
+    public int getVentas() {
+        return Ventas;
+    }
 
-    public clsVentas(int IdAplicacion, String NombreAplicacion, String EstatusAplicacion) {
+    public void setVentas(int Ventas) {
+        this.Ventas = Ventas;
+    }
+
+    public clsVentas(int IdAplicacion, String NombreAplicacion, int Ventas, String EstatusAplicacion) {
         this.IdAplicacion = IdAplicacion;
         this.NombreAplicacion = NombreAplicacion;
+        this.Ventas = Ventas;
         this.EstatusAplicacion = EstatusAplicacion;
     }
 

@@ -16,12 +16,12 @@ import java.util.List;
  */
 public class daoVentas {
 
-    private static final String SQL_SELECT = "SELECT aplid, aplnombre, aplestatus FROM tbl_aplicacion";
-    private static final String SQL_INSERT = "INSERT INTO tbl_aplicaciones(aplnombre, aplestatus) VALUES(?, ?)";
-    private static final String SQL_UPDATE = "UPDATE tbl_aplicacion SET aplnombre=?, aplestatus=? WHERE aplid = ?";
-    private static final String SQL_DELETE = "DELETE FROM tbl_aplicacion WHERE aplid=?";
-    private static final String SQL_SELECT_NOMBRE = "SELECT aplid, aplnombre, aplestatus FROM tbl_aplicacion WHERE aplnombre = ?";
-    private static final String SQL_SELECT_ID = "SELECT aplid, aplnombre, aplestatus FROM tbl_aplicacion WHERE aplid = ?";    
+    private static final String SQL_SELECT = "SELECT venid, vennombre, vennumeroventas, venareaventas FROM tbl_vendedores";
+    private static final String SQL_INSERT = "INSERT INTO tbl_vendedores(vennombre, vennumeroventas, venareaventas) VALUES(?, ?, ?)";
+    private static final String SQL_UPDATE = "UPDATE tbl_vendedores SET vennombre=?, vennumeroventas=?, venareaventas=? WHERE venid = ?";
+    private static final String SQL_DELETE = "DELETE FROM tbl_vendedores WHERE venid=?";
+    private static final String SQL_SELECT_NOMBRE = "SELECT venid, vennombre, vennumeroventas, venareaventas FROM tbl_vendedores WHERE vennombre = ?";
+    private static final String SQL_SELECT_ID = "SELECT venid, vennombre, vennumeroventas, venareaventas FROM tbl_aplicacion WHERE venid = ?";    
 
     public List<clsVentas> consultaAplicacion() {
         Connection conn = null;
@@ -34,12 +34,14 @@ public class daoVentas {
             stmt = conn.prepareStatement(SQL_SELECT);
             rs = stmt.executeQuery();
             while (rs.next()) {
-                int id = rs.getInt("aplid");
-                String nombre = rs.getString("aplnombre");
-                String estatus = rs.getString("aplestatus");
+                int id = rs.getInt("venid");
+                String nombre = rs.getString("vennombre");
+                int ventas = rs.getInt("vennumeroventas");
+                String estatus = rs.getString("venareaventas");
                 clsVentas aplicacion = new clsVentas();
                 aplicacion.setIdAplicacion(id);
                 aplicacion.setNombreAplicacion(nombre);
+                aplicacion.setVentas(ventas);
                 aplicacion.setEstatusAplicacion(estatus);
                 aplicaciones.add(aplicacion);
             }
@@ -61,7 +63,8 @@ public class daoVentas {
             conn = Conexion.getConnection();
             stmt = conn.prepareStatement(SQL_INSERT);
             stmt.setString(1, aplicacion.getNombreAplicacion());
-            stmt.setString(2, aplicacion.getEstatusAplicacion());
+            stmt.setInt(2, aplicacion.getVentas());
+            stmt.setString(3, aplicacion.getEstatusAplicacion());
 
             System.out.println("ejecutando query:" + SQL_INSERT);
             rows = stmt.executeUpdate();
@@ -86,7 +89,8 @@ public class daoVentas {
             stmt = conn.prepareStatement(SQL_UPDATE);
             stmt.setString(1, aplicacion.getNombreAplicacion());
             stmt.setString(2, aplicacion.getEstatusAplicacion());
-            stmt.setInt(3, aplicacion.getIdAplicacion());
+            stmt.setInt(3, aplicacion.getVentas());
+            stmt.setInt(4, aplicacion.getIdAplicacion());
 
             rows = stmt.executeUpdate();
             System.out.println("Registros actualizado:" + rows);
@@ -135,13 +139,15 @@ public class daoVentas {
             stmt.setString(1, aplicacion.getNombreAplicacion());
             rs = stmt.executeQuery();
             while (rs.next()) {
-                int id = rs.getInt("aplid");
-                String nombre = rs.getString("aplnombre");
-                String estatus = rs.getString("aplestatus");
+                int id = rs.getInt("venid");
+                String nombre = rs.getString("vennombre");
+                int ventas = rs.getInt("vennumeroventas");
+                String estatus = rs.getString("venareaventas");
 
                 //aplicacion = new clsAplicacion();
                 aplicacion.setIdAplicacion(id);
                 aplicacion.setNombreAplicacion(nombre);
+                aplicacion.setVentas(ventas);
                 aplicacion.setEstatusAplicacion(estatus);
                 System.out.println(" registro consultado: " + aplicacion);                
             }
@@ -169,13 +175,15 @@ public class daoVentas {
             //stmt.setString(1, aplicacion.getNombreAplicacion());
             rs = stmt.executeQuery();
             while (rs.next()) {
-                int id = rs.getInt("aplid");
-                String nombre = rs.getString("aplnombre");
-                String estatus = rs.getString("aplestatus");
+                int id = rs.getInt("venid");
+                String nombre = rs.getString("vennombre");
+                int ventas = rs.getInt("vennumeroventas");
+                String estatus = rs.getString("venareaventas");
 
                 //aplicacion = new clsAplicacion();
                 aplicacion.setIdAplicacion(id);
                 aplicacion.setNombreAplicacion(nombre);
+                aplicacion.setVentas(ventas);
                 aplicacion.setEstatusAplicacion(estatus);
                 System.out.println(" registro consultado: " + aplicacion);                
             }
